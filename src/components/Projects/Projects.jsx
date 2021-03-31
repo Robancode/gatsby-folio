@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import Calculator2 from './Calculator2'
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -72,13 +73,16 @@ const Projects = () => {
                   </Fade>
                 </Col>
                 <Col lg={8} sm={12}>
+                 
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
                     delay={1000}
                     distance="30px"
-                  >
+                    >
+                    {title === "Mini calculator" ?  <Calculator2/>
+                  :
                     <div className="project-wrapper__image">
                       <a
                         href={url || '#!'}
@@ -104,7 +108,7 @@ const Projects = () => {
                           </div>
                         </Tilt>
                       </a>
-                    </div>
+                    </div>}
                   </Fade>
                 </Col>
               </Row>
