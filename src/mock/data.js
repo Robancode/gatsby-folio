@@ -47,10 +47,10 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
+    title: 'Toggle the Theme',
     info: '',
     info2: '',
-    url: '',
+    url: './Projects/ContextSwitching',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
 ];
