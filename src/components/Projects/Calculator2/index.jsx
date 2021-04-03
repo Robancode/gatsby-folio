@@ -1,91 +1,83 @@
-import React, { Component } from "react";
-import "./index.css";
-import Button from "./components/Button";
-import Input from "./components/Input";
-import ClearButton from "./components/ClearButton";
+import React, { Component } from 'react';
+import './index.css';
+import Button from './components/Button';
+import Input from './components/Input';
+import ClearButton from './components/ClearButton';
 
 class Calculator2 extends Component {
   state = {
-    input: "",
-    previousNumber: "",
-    currentNumber: "",
-    operator: ""
+    input: '',
+    previousNumber: '',
+    currentNumber: '',
+    operator: '',
   };
-  addToInput = val => {
+  addToInput = (val) => {
     this.setState({ input: this.state.input + val });
   };
 
-  addZeroToInput = val => {
+  addZeroToInput = (val) => {
     //if this state input is not empty, then add zero
-    if (this.state.input !== "") {
+    if (this.state.input !== '') {
       this.setState({ input: this.state.input + val });
     }
   };
 
-  addDecimalToInput = val => {
+  addDecimalToInput = (val) => {
     // only add decimal if there is no decimal in the current input area
-    if (this.state.input.indexOf(".") === -1) {
+    if (this.state.input.indexOf('.') === -1) {
       this.setState({ input: this.state.input + val });
     }
   };
 
   clearInput = () => {
-    this.setState({ input: "" });
+    this.setState({ input: '' });
   };
 
   add = () => {
     this.state.previousNumber = this.state.input;
-    this.setState({ input: "" });
-    this.state.operator = "plus";
+    this.setState({ input: '' });
+    this.state.operator = 'plus';
   };
 
   subtract = () => {
     this.state.previousNumber = this.state.input;
-    this.setState({ input: "" });
-    this.state.operator = "subtract";
+    this.setState({ input: '' });
+    this.state.operator = 'subtract';
   };
 
   multiply = () => {
     this.state.previousNumber = this.state.input;
-    this.setState({ input: "" });
-    this.state.operator = "multiply";
+    this.setState({ input: '' });
+    this.state.operator = 'multiply';
   };
 
   divide = () => {
     this.state.previousNumber = this.state.input;
-    this.setState({ input: "" });
-    this.state.operator = "divide";
+    this.setState({ input: '' });
+    this.state.operator = 'divide';
   };
   evaluate = () => {
     this.state.currentNumber = this.state.input;
 
     switch (this.state.operator) {
-      case "plus":
+      case 'plus':
         this.setState({
-          input:
-            parseInt(this.state.previousNumber) +
-            parseInt(this.state.currentNumber)
+          input: parseInt(this.state.previousNumber) + parseInt(this.state.currentNumber),
         });
         break;
-      case "subtract":
+      case 'subtract':
         this.setState({
-          input:
-            parseInt(this.state.previousNumber) -
-            parseInt(this.state.currentNumber)
+          input: parseInt(this.state.previousNumber) - parseInt(this.state.currentNumber),
         });
         break;
-      case "multiply":
+      case 'multiply':
         this.setState({
-          input:
-            parseInt(this.state.previousNumber) *
-            parseInt(this.state.currentNumber)
+          input: parseInt(this.state.previousNumber) * parseInt(this.state.currentNumber),
         });
         break;
-      case "divide":
+      case 'divide':
         this.setState({
-          input:
-            parseInt(this.state.previousNumber) /
-            parseInt(this.state.currentNumber)
+          input: parseInt(this.state.previousNumber) / parseInt(this.state.currentNumber),
         });
         break;
     }
@@ -94,7 +86,7 @@ class Calculator2 extends Component {
     return (
       <div className="Index">
         <div className="calc-wrapper">
-          <div className="row calc-row">
+          <div className="row calc-row calculation-area">
             <Input>{this.state.input}</Input>
           </div>
           <div className="row calc-row">

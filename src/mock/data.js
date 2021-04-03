@@ -37,20 +37,20 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'ceasefire.jpg',
-    title: 'Album Art',
-    info: 'Album design for Eli Bre, singer and songwriter',
+    img: 'project.jpg',
+    title: 'Toggle the Theme',
+    info: 'Click on the button to toggle the styles of the booklist!',
     info2: '',
-    url: '',
+    url: './Projects/ContextSwitching',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'Toggle the Theme',
-    info: '',
+    img: 'ceasefire.jpg',
+    title: 'Design work',
+    info: 'Album design for Eli Bre, singer and songwriter',
     info2: '',
-    url: './Projects/ContextSwitching',
+    url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
 ];
