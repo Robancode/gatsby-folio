@@ -48,8 +48,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'ceasefire.jpg',
     title: 'Design work',
-    info: 'Album design for Eli Bre, singer and songwriter',
-    info2: '',
+    info: 'Designer and artist',
+    info2: 'Album design for Eli Bre, singer and songwriter',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
@@ -65,25 +65,25 @@ export const contactData = {
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
+    // {
+    //   id: nanoid(),
+    //   name: 'twitter',
+    //   url: '',
+    // },
+    // {
+    //   id: nanoid(),
+    //   name: 'codepen',
+    //   url: '',
+    // },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/rosita-bannert/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/Robancode',
     },
   ],
 };
