@@ -18,10 +18,13 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'rosita.jpg',
-  paragraphOne: 'Rosita Bannert is a cross disciplinary web engineer, designer and linguist, with a penchant for mixing the disciplines. She studied arts and sciences at UCL and continues her education by translating documents from Chinese to English and vice versa, she was picked to work alongside the Culture Youth Forum in Jeju, Korea, for 2 years running, and her day job involves being part of a large development team to make apps. ',
-  paragraphTwo: ' ',
+  paragraphOne:
+    'Rosita Bannert is a cross disciplinary web engineer, designer and linguist, with a penchant for mixing the disciplines. ',
+  paragraphTwo:
+    'She studied arts and sciences at UCL and continues her education by translating documents from Chinese to English and vice versa, she was picked to work alongside the Culture Youth Forum in Jeju, Korea, for 2 years running, and her day job involves being part of a large development team to make apps. ',
   paragraphThree: ' ',
-  resume: 'https://docs.google.com/document/d/1jCpEJ7_nN_f2aKDazYTKZwVV-u6hKaLd_y9bJGHkhgY/edit?usp=sharing', // if no resume, the button will not show up
+  resume:
+  'https://docs.google.com/document/d/1jCpEJ7_nN_f2aKDazYTKZwVV-u6hKaLd_y9bJGHkhgY/edit?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -33,7 +36,7 @@ export const projectsData = [
     info: 'Try it out for yourself.',
     info2: 'A simple react-calculator.',
     url: './Projects/Calculator2/',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -42,7 +45,7 @@ export const projectsData = [
     info: 'Click on the button to toggle the styles of the booklist!',
     info2: '',
     url: './Projects/ContextSwitching',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -51,7 +54,7 @@ export const projectsData = [
     info: 'Designer and artist',
     info2: 'Album design for Eli Bre, singer and songwriter',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
@@ -59,7 +62,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'rositabannert@hotmail.co.uk',
 };
 
 // FOOTER DATA
